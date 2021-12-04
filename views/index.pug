@@ -1,0 +1,58 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/logo.png")
+                | CKD
+            li #[a(href="/") Home ]
+            li #[a(href="/") About ]
+            li #[a(href="/") Services ]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+
+    section#introSection 
+        div Welcome to CobraKai Dojo 
+        div.small Strike First.Strike Hard.Mercy
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Perfection
+            div.card-box
+                div.card-img
+                    img(src="https://akcdn.detik.net.id/visual/2015/05/15/d89ae98c-f53f-46b3-9095-20d9994bfd2f_169.jpg?w=650")
+                div.card-content
+                    p This is one of the best dojos across the globe
+        div.card
+            h3 Refinement
+            div.card-box
+                div.card-img
+                    img(src="https://wallpaperaccess.com/full/19420.jpg")
+                div.card-content
+                    p This is one of the best dojos across the globe
+        div.card
+            h3 Expertise
+            div.card-box
+                div.card-img
+                    img(src="https://blog.international-lan.com/wp-content/uploads/2017/11/How-many-Kung-Fu-stars-do-you-know-from-China.jpg")
+                div.card-content
+                    p This is one of the best dojos across the globe
+
+    section#sponsorsSection 
+        h3 Our Sponsors 
+        div#sponsors
+            img(src="/static/img/logo1.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/img/logo2.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/img/logo3.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/img/logo4.png", alt="Sponsor Image", class="spImage")
+
+    footer#footer 
+        | Copyright © 2020 CobraKai.com | All rights reserved
+    script
+      include ../static/index.js
